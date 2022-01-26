@@ -8,12 +8,12 @@ public class Player : MonoBehaviour
     [Header("Stats")]
     public int curHp;
     public int maxHp;
-    public int moveSpeed;  //how fast we move
+    public int moveSpeed;  
     public int damage;
     public float interactRange;
     public List<string> inventory = new List<string>();
 
-    private Vector2 facingDirection;  //direction we are facing
+    private Vector2 facingDirection;  
 
     [Header("Combat")]
     public KeyCode attackKey;
