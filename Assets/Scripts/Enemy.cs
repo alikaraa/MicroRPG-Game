@@ -20,14 +20,14 @@ public class Enemy : MonoBehaviour
     public float attackRate;
     private float lastAttackTime;
 
-    //components
+   
     private Rigidbody2D rig;
 
     void Awake(){
-        //get the player target 
+       
         player = FindObjectOfType<Player>();
 
-        //get the rigidbody component
+       
         rig = GetComponent<Rigidbody2D>();
     }
     
@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
     }
 
     void Die(){
-        //Give the player xp
+       
         player.AddXp(xpToGive);
         
         Destroy(gameObject);
